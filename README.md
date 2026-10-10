@@ -46,20 +46,20 @@ Chương trình hoạt động theo mô hình chuỗi xử lý (Pipeline):
 
 **Bước 1: Clone repository về máy local**
 
-```text
+```bash
 git clone [https://github.com/ngocch2932005-lang/ScanReflectedXSS.git](https://github.com/ngocch2932005-lang/ScanReflectedXSS.git)
 cd ScanReflectedXSS
 ```
 
 **Bước 2: Cài đặt các thư viện Python phụ thuộc:**
 
-```text
+```bash
 pip install -r requirements.txt
 ```
 
 **Bước 3: Cài đặt trình duyệt Chromium cho Playwright:**
 
-```text
+```bash
 playwright install chromium
 ```
 
@@ -67,7 +67,7 @@ playwright install chromium
 
 Để thử nghiệm công cụ, bạn có thể cài đặt ứng dụng web chứa các kịch bản lỗ hổng mẫu:
 
-```text
+```bash
 # Clone source code bài lab
 git clone [https://github.com/TMT-CS/xss_lab_nodejs](https://github.com/TMT-CS/xss_lab_nodejs)
 cd xss_lab_nodejs
@@ -85,19 +85,19 @@ node app.js
 
 Kiểm tra hướng dẫn các tham số dòng lệnh:
 
-```text
+```bash
 python main.py --help
 ```
 
 **1. Kiểm thử trực tiếp một Endpoint cụ thể**
 
-```text
+```bash
 python main.py --url "http://localhost:3000/reflected/level1?q=test"
 ```
 
 **2. Quét tự động toàn bộ trang web (Crawler + Scan)**
 
-```text
+```bash
 python main.py http://localhost:3000/ --depth 2 --max-urls 20 --report-dir ./reports
 ```
 
