@@ -24,9 +24,13 @@ Chương trình hoạt động theo mô hình chuỗi xử lý (Pipeline):
 ```
 
 **1. Crawler:** Thu thập toàn bộ URL và Endpoint tiềm năng.
+
 **2. Scanner:** Gửi Marker độc nhất để phát hiện điểm phản chiếu và gán ngữ cảnh.
+
 **3. Filter Prober:** Thăm dò các ký tự `<, >, ", ', \, &#96` và các cặp `(Tag, Event)` cho phép.
+
 **4. Verifier:** Sinh payload theo ngữ cảnh và dùng Playwright xác minh thực thi trên trình duyệt thật.
+
 **5. Reporter:** Tổng hợp kết quả và xuất báo cáo.
 
 ---
