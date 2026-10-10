@@ -45,6 +45,12 @@ Chương trình hoạt động theo mô hình chuỗi xử lý (Pipeline):
 **2. Cài đặt Công cụ Kiểm thử (Scan_Reflected_XSS)**
 
 **Bước 1: Clone repository về máy local**
+
+```text
+git clone [https://github.com/ngocch2932005-lang/ScanReflectedXSS.git](https://github.com/ngocch2932005-lang/ScanReflectedXSS.git)
+cd ScanReflectedXSS
+```
+
 **Bước 2: Cài đặt các thư viện Python phụ thuộc:**
 
 ```text
